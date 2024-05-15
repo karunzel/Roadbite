@@ -1,41 +1,40 @@
-/* Import Roboto Font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-/* Root variables for colors and font family */
 :root {
-    --primary-color: #0A2540; /* Dark blue */
-    --secondary-color: #46A4D3; /* Light blue */
-    --text-color: #FFFFFF; /* White */
-    --text-secondary-color: #CCCCCC; /* Light grey */
-    --font-family: 'Roboto', sans-serif; /* Roboto font */
+    --primary-color: #0A2540;
+    --secondary-color: #46A4D3;
+    --text-color: #FFFFFF;
+    --text-secondary-color: #CCCCCC;
+    --font-family: 'Roboto', sans-serif;
 }
 
-/* Basic Reset */
 body, html {
     margin: 0;
     padding: 0;
     font-family: var(--font-family);
     color: var(--text-color);
-    background-color: #F4F4F4; /* Light grey background for the page */
+    background-color: #F4F4F4;
 }
 
-/* Header styles */
 header {
     background-color: var(--primary-color);
     color: var(--text-color);
     text-align: center;
     padding: 20px 0;
-    font-size: 1.2em;
 }
 
-/* Navigation styles */
+header img {
+    max-width: 200px; /* Make sure the logo fits in the header */
+    margin-bottom: 10px; /* Space between logo and text */
+}
+
 nav {
     background-color: var(--primary-color);
     color: var(--text-color);
     padding: 10px 0;
     display: flex;
     justify-content: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* subtle shadow for depth */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 nav a {
@@ -43,20 +42,17 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-weight: 500;
-    transition: color 0.3s ease;
 }
 
 nav a:hover {
     color: var(--secondary-color);
 }
 
-/* Main content styles */
 main {
     padding: 20px;
     text-align: center;
 }
 
-/* Button styling */
 button {
     background-color: var(--secondary-color);
     color: var(--text-color);
@@ -65,26 +61,24 @@ button {
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    border-radius: 5px; /* Rounded corners for buttons */
+    border-radius: 5px;
 }
 
 button:hover {
     background-color: darken(var(--secondary-color), 10%);
 }
 
-/* Footer styling */
 footer {
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: var(--text-secondary-color);
     text-align: center;
     padding: 20px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.1); /* Shadow to lift footer visually */
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
 }
 
-/* Responsive typography */
 h1, h2, h3, p {
     margin: 20px 0;
 }
@@ -104,9 +98,8 @@ p {
     font-size: 1em;
 }
 
-/* Form styles */
 input[type="text"], input[type="email"], textarea {
-    width: 90%; /* Responsive width */
+    width: 90%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #CCC;
@@ -114,7 +107,7 @@ input[type="text"], input[type="email"], textarea {
 }
 
 textarea {
-    height: 100px; /* Fixed height for text area */
+    height: 100px;
 }
 
 input[type="submit"] {
@@ -122,19 +115,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-/* Utility classes for additional styling */
-.text-secondary {
-    color: var(--text-secondary-color);
-}
-
-.text-center {
-    text-align: center;
-}
-
-.bold {
-    font-weight: 700;
-}
-
-.medium {
-    font-weight: 500;
+#home img {
+    width: 50%;
+    float: right;
 }
