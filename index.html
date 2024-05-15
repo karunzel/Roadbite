@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RouteBite - Find Food That Fits</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="RouteBite Logo" style="max-width: 400px;">
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#features">Features</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <div class="allergen-filter-panel">
+            <h2>Discover dining options wherever your journey takes you</h2>
+            <form action="/search" method="GET">
+                <div class="search-group">
+                    <input type="text" name="zipcode" placeholder="Search by Zip Code or City & State">
+                    <input type="text" name="restaurant" placeholder="Restaurant Name">
+                    <select name="distance">
+                        <option value="20">20 km</option>
+                        <!-- Additional options -->
+                    </select>
+                    <button type="submit">Go!</button>
+                </div>
+                <div class="allergen-buttons">
+                    <button type="button">Peanuts</button>
+                    <!-- Additional allergen buttons -->
+                </div>
+                <p><a href="#">Create Profile to Save Allergen Settings</a></p>
+            </form>
+        </div>
+        <section class="review-section">
+            <p class="stars">★★★★★</p>
+            <p>"RouteBite has really enhanced my travel! The recommendations were perfect." - Geoff A.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 RouteBite. All rights reserved. We love Canada.</p>
+    </footer>
+</body>
+</html>
