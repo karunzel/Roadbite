@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RouteBite - Find Food That Fits</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="RouteBite Logo" style="max-width: 400px;"> <!-- Adjusted logo size -->
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#features">Features</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <div class="allergen-filter-panel">
+            <h2>Discover dining options wherever your journey takes you</h2>
+            <form action="/search" method="GET" style="width: 75%; float: left;">
+                <input type="text" name="zipcode" placeholder="Search by Zip Code or City & State">
+                <input type="text" name="restaurant" placeholder="Restaurant Name">
+                <select name="distance">
+                    <option value="20">20 Miles</option>
+                    <!-- Additional options -->
+                </select>
+                <input type="text" name="route" placeholder="Mein Standort">
+                <button type="submit">Go!</button>
+            </form>
+            <div class="allergen-buttons">
+                <button type="button">Peanuts</button>
+                <button type="button">Tree Nuts</button>
+                <button type="button">Dairy</button>
+                <button type="button">Eggs</button>
+                <button type="button">Wheat</button>
+                <button type="button">Gluten</button>
+                <button type="button">Fish</button>
+                <button type="button">Shellfish</button>
+                <button type="button">Soy</button>
+            </div>
+            <p><a href="#">Create Profile to Save Allergen Settings</a></p>
+            <div style="width: 25%; float: right;">
+                <img src="image1.jpg" alt="Image1" style="width: 100%;">
+            </div>
+        </div>
+        <section id="reviews">
+            <p>"RouteBite has really enhanced my travel! The recommendations were perfect." - Geoff A.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 RouteBite. All rights reserved. We love Canada.</p>
+    </footer>
+</body>
+</html>
