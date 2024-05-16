@@ -104,8 +104,14 @@ nav a:hover {
 }
 
 .allergen-filter-panel a {
-    color: #46A4D3;
+    color: var(--secondary-color);
     text-decoration: underline;
+    display: block; /* Makes the links block-level for better clickability */
+    margin-bottom: 10px; /* Adds spacing between the links */
+}
+
+.allergen-filter-panel a:hover {
+    color: var(--primary-color); /* Changes color on hover */
 }
 
 /* Footer styling */
@@ -118,6 +124,7 @@ footer {
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    padding-bottom: 40px; /* Increased bottom padding */
 }
 
 /* Responsive typography */
@@ -172,34 +179,18 @@ p {
     display: table;
     clear: both;
 }
+
 /* Review styling in footer */
 footer .review {
-    color: gold; /* Ändert die Textfarbe zu Gold, passend zu den Sternen */
-    font-size: 1,5em; /* Optional: Adjust size as needed */
-    margin-bottom: 10px; /* Adds spacing between the review and copyright text */
+    color: gold; /* Changes the text color to gold, matching the stars */
+    font-size: 1em; /* Adjusts size as needed */
+    margin-bottom: 5px; /* Reduces spacing between the review and copyright text */
 }
 
 /* Star ratings */
 footer .stars {
-    color: gold; /* Bestätigt, dass die Farbe Gold ist */
+    color: gold; /* Confirms that the color is gold */
     font-size: 1.2em; /* Adjust size of stars */
-}
-/* Increase spacing below the footer */
-footer {
-    padding-bottom: 40px; /* Vergrößert den unteren Padding-Wert */
-}
-
-/* Review text styling adjustments */
-footer .review {
-    font-size: 1em; /* Sets the standard text size for reviews */
-    color: var(--text-color); /* Ensures the text color matches the defined variable */
-    margin-bottom: 20px; /* Increases bottom margin for better spacing */
-}
-
-/* Enhance readability and aesthetics of star ratings */
-footer .stars {
-    color: gold; /* Sets star icons to gold */
-    font-size: 1.5em; /* Makes stars larger */
 }
 
 /* Media query to adjust footer padding on smaller screens */
@@ -208,14 +199,3 @@ footer .stars {
         padding-bottom: 20px; /* Reduces padding at the bottom on small screens */
     }
 }
-.allergen-filter-panel a {
-    color: var(--secondary-color);
-    text-decoration: underline;
-    display: block; /* Macht die Links block-level für bessere Klickbarkeit */
-    margin-bottom: 10px; /* Fügt Abstand zwischen den Links hinzu */
-}
-
-.allergen-filter-panel a:hover {
-    color: var(--primary-color); /* Ändert die Farbe beim Hover */
-}
-
