@@ -25,6 +25,7 @@ header {
     color: var(--text-color);
     text-align: center;
     padding: 20px 0;
+    height: 80px; /* Setzt die feste Höhe des Headers */
 }
 
 header img {
@@ -119,12 +120,12 @@ footer {
     background-color: var(--primary-color);
     color: var(--text-color);
     text-align: center;
-    padding: 20px 0 40px;
+    padding: 20px 0;
+    height: 80px; /* Stellt sicher, dass der Footer die gleiche Höhe wie der Header hat */
     position: fixed;
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
-    padding-bottom: 40px; /* Increased bottom padding */
 }
 
 /* Responsive typography */
@@ -198,25 +199,4 @@ footer .stars {
     footer {
         padding-bottom: 20px; /* Reduces padding at the bottom on small screens */
     }
-}
-/* Header styles */
-header {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    text-align: center;
-    padding: 20px 0;
-    height: 80px; /* Setzt die feste Höhe des Headers */
-}
-
-/* Footer styling */
-footer {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    text-align: center;
-    padding: 20px 0;
-    height: 80px; /* Stellt sicher, dass der Footer die gleiche Höhe wie der Header hat */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
 }
