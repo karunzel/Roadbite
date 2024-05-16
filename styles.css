@@ -212,3 +212,17 @@ p {
         flex-direction: column; /* Stacks reviews vertically on small screens */
     }
 }
+/* General Styles for the Container */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Styles for Individual Buttons */
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items:
