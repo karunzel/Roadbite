@@ -56,6 +56,18 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
+/* Icons styling */
+.icons {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.icons img {
+    max-height: 5cm; /* Sets maximum height for the icons */
+    margin: 0 10px; /* Adds spacing between the icons */
+}
+
 /* Allergen Filter Panel Styles */
 .allergen-filter-panel {
     background: linear-gradient(to right, #0A2540, #46A4D3);
@@ -211,29 +223,4 @@ p {
     footer .reviews {
         flex-direction: column; /* Stacks reviews vertically on small screens */
     }
-}
-
-/* General Styles for the Container */
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-/* Styles for Individual Buttons */
-.button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100px; /* Adjust the width to match the search bar */
-    height: 100px; /* Adjust the height to maintain the aspect ratio */
-    margin: 10px;
-}
-
-.button img {
-    width: 80%;
-    height: auto;
 }
