@@ -24,8 +24,8 @@ header {
     background-color: var(--primary-color);
     color: var(--text-color);
     text-align: center;
-    padding: 20px 0;
-    height: 80px; /* Setzt die feste Höhe des Headers */
+    padding: 40px 0; /* Increases padding to add more space around the logo */
+    height: 120px; /* Increases height to create more space */
 }
 
 header img {
@@ -121,11 +121,32 @@ footer {
     color: var(--text-color);
     text-align: center;
     padding: 20px 0;
-    height: 80px; /* Stellt sicher, dass der Footer die gleiche Höhe wie der Header hat */
+    height: 120px; /* Stellt sicher, dass der Footer die gleiche Höhe wie der Header hat */
     position: fixed;
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+/* Review styling in footer */
+footer .reviews {
+    display: flex;
+    justify-content: space-around; /* Aligns the reviews side by side */
+    padding: 0 20px; /* Adds some padding on the sides */
+}
+
+footer .review {
+    color: gold; /* Changes the text color to gold, matching the stars */
+    font-size: 1em; /* Adjusts size as needed */
+    margin-bottom: 5px; /* Reduces spacing between the review and copyright text */
+    flex: 1; /* Ensures the reviews take equal space */
+    text-align: left; /* Aligns text to the left for better readability */
+}
+
+/* Star ratings */
+footer .stars {
+    color: gold; /* Confirms that the color is gold */
+    font-size: 1.2em; /* Adjust size of stars */
 }
 
 /* Responsive typography */
@@ -181,22 +202,13 @@ p {
     clear: both;
 }
 
-/* Review styling in footer */
-footer .review {
-    color: gold; /* Changes the text color to gold, matching the stars */
-    font-size: 1em; /* Adjusts size as needed */
-    margin-bottom: 5px; /* Reduces spacing between the review and copyright text */
-}
-
-/* Star ratings */
-footer .stars {
-    color: gold; /* Confirms that the color is gold */
-    font-size: 1.2em; /* Adjust size of stars */
-}
-
 /* Media query to adjust footer padding on smaller screens */
 @media (max-width: 600px) {
     footer {
         padding-bottom: 20px; /* Reduces padding at the bottom on small screens */
+        height: auto; /* Allows the height to adjust on small screens */
+    }
+    footer .reviews {
+        flex-direction: column; /* Stacks reviews vertically on small screens */
     }
 }
