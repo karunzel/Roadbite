@@ -24,8 +24,8 @@ header {
     background-color: var(--primary-color);
     color: var(--text-color);
     text-align: center;
-    padding: 40px 0; /* Increases padding to add more space around the logo */
-    height: 120px; /* Increases height to create more space */
+    padding: 40px 0; /* Increased padding for more space around the logo */
+    height: 120px; /* Increased height of the header */
 }
 
 header img {
@@ -56,18 +56,6 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
-/* Icons styling */
-.icons {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-}
-
-.icons img {
-    max-height: 5cm; /* Sets maximum height for the icons */
-    margin: 0 10px; /* Adds spacing between the icons */
-}
-
 /* Allergen Filter Panel Styles */
 .allergen-filter-panel {
     background: linear-gradient(to right, #0A2540, #46A4D3);
@@ -93,6 +81,25 @@ nav a:hover {
     margin-right: 10px;
 }
 
+/* Icon styles */
+.route-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.route-options button {
+    background: none;
+    border: none;
+    margin: 0 10px;
+}
+
+.route-options img {
+    max-width: 50px; /* Set the max width to 50px */
+    height: auto;
+}
+
+/* Rest of the styles */
 .allergen-filter-panel .search-group button {
     background-color: var(--secondary-color);
     color: white;
@@ -133,32 +140,11 @@ footer {
     color: var(--text-color);
     text-align: center;
     padding: 20px 0;
-    height: 120px; /* Stellt sicher, dass der Footer die gleiche Höhe wie der Header hat */
+    height: 120px; /* Ensures the footer height matches the header */
     position: fixed;
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
-}
-
-/* Review styling in footer */
-footer .reviews {
-    display: flex;
-    justify-content: space-around; /* Aligns the reviews side by side */
-    padding: 0 20px; /* Adds some padding on the sides */
-}
-
-footer .review {
-    color: gold; /* Changes the text color to gold, matching the stars */
-    font-size: 1em; /* Adjusts size as needed */
-    margin-bottom: 5px; /* Reduces spacing between the review and copyright text */
-    flex: 1; /* Ensures the reviews take equal space */
-    text-align: left; /* Aligns text to the left for better readability */
-}
-
-/* Star ratings */
-footer .stars {
-    color: gold; /* Confirms that the color is gold */
-    font-size: 1.2em; /* Adjust size of stars */
 }
 
 /* Responsive typography */
@@ -214,13 +200,22 @@ p {
     clear: both;
 }
 
+/* Review styling in footer */
+footer .review {
+    color: gold; /* Changes the text color to gold, matching the stars */
+    font-size: 1em; /* Adjusts size as needed */
+    margin-bottom: 5px; /* Reduces spacing between the review and copyright text */
+}
+
+/* Star ratings */
+footer .stars {
+    color: gold; /* Confirms that the color is gold */
+    font-size: 1.2em; /* Adjust size of stars */
+}
+
 /* Media query to adjust footer padding on smaller screens */
 @media (max-width: 600px) {
     footer {
         padding-bottom: 20px; /* Reduces padding at the bottom on small screens */
-        height: auto; /* Allows the height to adjust on small screens */
-    }
-    footer .reviews {
-        flex-direction: column; /* Stacks reviews vertically on small screens */
     }
 }
