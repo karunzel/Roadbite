@@ -20,28 +20,30 @@
     </nav>
     <main>
         <div class="content-container">
+            <div class="icons">
+                <img src="route-icon.jpg" alt="Route Icon">
+                <img src="car-icon.jpg" alt="Car Icon">
+                <img src="walk-icon.jpg" alt="Walk Icon">
+                <img src="bus-icon.jpg" alt="Bus Icon">
+                <img src="bike-icon.jpg" alt="Bike Icon">
+            </div>
             <div class="allergen-filter-panel" style="width: 75%;">
                 <h2>The Leading Guide to Allergy-Friendly Restaurants Nationwide</h2>
                 <form action="/search" method="GET">
-                    <div class="route-options">
-                        <button type="button"><img src="route-icon.jpg" alt="Route"></button>
-                        <button type="button"><img src="car-icon.jpg" alt="Car"></button>
-                        <button type="button"><img src="walk-icon.jpg" alt="Walk"></button>
-                        <button type="button"><img src="bus-icon.jpg" alt="Bus"></button>
-                        <button type="button"><img src="bike-icon.jpg" alt="Bike"></button>
+                    <div class="search-group">
+                        <input type="text" name="start" placeholder="Starting Point">
+                        <input type="text" name="destination" placeholder="Destination">
+                        <input type="text" name="zipcode" placeholder="Search by Zip Code or City">
+                        <input type="text" name="restaurant" placeholder="Restaurant Name">
+                        <select name="distance">
+                            <option value="5">5 km</option>
+                            <option value="10">10 km</option>
+                            <option value="20">20 km</option>
+                            <option value="50">50 km</option>
+                            <option value="100">100 km</option>
+                        </select>
+                        <button type="submit">Go!</button>
                     </div>
-                    <input type="text" name="start" placeholder="Starting Point">
-                    <input type="text" name="destination" placeholder="Destination">
-                    <input type="text" name="zipcode" placeholder="Search by Zip Code or City">
-                    <input type="text" name="restaurant" placeholder="Restaurant Name">
-                    <select name="distance">
-                        <option value="5">5 km</option>
-                        <option value="10">10 km</option>
-                        <option value="20">20 km</option>
-                        <option value="50">50 km</option>
-                        <option value="100">100 km</option>
-                    </select>
-                    <button type="submit">Go!</button>
                     <div class="allergen-buttons">
                         <button type="button">Peanuts</button>
                         <button type="button">Vegan</button>
@@ -81,7 +83,7 @@
                 "Great for late-night snacks, finds more spots than my buddy!" - Seth Rogen
             </div>
         </div>
-        <p>© 2024 RouteBite. Founded in 2024. All rights reserved. We love Canada. And America. Of course.</p>
+        <p>© 2024 RouteBite. Founded in 2024. All rights reserved. We love Canada.And America. Of Course.</p>
     </footer>
 </body>
 </html>
