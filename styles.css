@@ -212,6 +212,7 @@ p {
         flex-direction: column; /* Stacks reviews vertically on small screens */
     }
 }
+
 /* General Styles for the Container */
 .container {
     display: flex;
@@ -225,4 +226,14 @@ p {
 .button {
     display: flex;
     flex-direction: column;
-    align-items:
+    align-items: center;
+    justify-content: center;
+    width: 100px; /* Adjust the width to match the search bar */
+    height: 100px; /* Adjust the height to maintain the aspect ratio */
+    margin: 10px;
+}
+
+.button img {
+    width: 80%;
+    height: auto;
+}
