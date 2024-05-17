@@ -20,30 +20,28 @@
     </nav>
     <main>
         <div class="content-container">
-            <div class="icons">
-                <img src="route-icon.jpg" alt="Route Icon">
-                <img src="car-icon.jpg" alt="Car Icon">
-                <img src="walk-icon.jpg" alt="Walk Icon">
-                <img src="bus-icon.jpg" alt="Bus Icon">
-                <img src="bike-icon.jpg" alt="Bike Icon">
-            </div>
             <div class="allergen-filter-panel" style="width: 75%;">
                 <h2>The Leading Guide to Allergy-Friendly Restaurants Nationwide</h2>
                 <form action="/search" method="GET">
-                    <div class="search-group">
-                        <input type="text" name="start" placeholder="Starting Point">
-                        <input type="text" name="destination" placeholder="Destination">
-                        <input type="text" name="zipcode" placeholder="Search by Zip Code or City">
-                        <input type="text" name="restaurant" placeholder="Restaurant Name">
-                        <select name="distance">
-                            <option value="5">5 km</option>
-                            <option value="10">10 km</option>
-                            <option value="20">20 km</option>
-                            <option value="50">50 km</option>
-                            <option value="100">100 km</option>
-                        </select>
-                        <button type="submit">Go!</button>
+                    <div class="route-options">
+                        <button type="button"><img src="route-icon.jpg" alt="Route"></button>
+                        <button type="button"><img src="car-icon.jpg" alt="Car"></button>
+                        <button type="button"><img src="walk-icon.jpg" alt="Walk"></button>
+                        <button type="button"><img src="bus-icon.jpg" alt="Bus"></button>
+                        <button type="button"><img src="bike-icon.jpg" alt="Bike"></button>
                     </div>
+                    <input type="text" name="start" placeholder="starting point">
+                    <input type="text" name="destination" placeholder="destination">
+                    <input type="text" name="zipcode" placeholder="Search by Zip Code or City">
+                    <input type="text" name="restaurant" placeholder="Restaurant Name">
+                    <select name="distance">
+                        <option value="5">5 km</option>
+                        <option value="10">10 km</option>
+                        <option value="20">20 km</option>
+                        <option value="50">50 km</option>
+                        <option value="100">100 km</option>
+                    </select>
+                    <button type="submit">Go!</button>
                     <div class="allergen-buttons">
                         <button type="button">Peanuts</button>
                         <button type="button">Vegan</button>
@@ -65,25 +63,25 @@
         </div>
     </main>
     <footer>
-        <div class="reviews">
-            <div class="review">
+        <div class="reviews-container">
+            <p class="review">
                 <span class="stars">★★★★★</span>
                 "RouteBite has really enhanced my travel! The recommendations were perfect." - Geoff A.
-            </div>
-            <div class="review">
+            </p>
+            <p class="review">
                 <span class="stars">★★★★★</span>
                 "Love the diplomatic ambiance filter. Every salad gets a chance!" - Justin Trudeau
-            </div>
-            <div class="review">
+            </p>
+            <p class="review">
                 <span class="stars">★★★★★</span>
                 "Impressive speed, almost as fast as me on ice!" - Connor McDavid
-            </div>
-            <div class="review">
+            </p>
+            <p class="review">
                 <span class="stars">★★★★★</span>
                 "Great for late-night snacks, finds more spots than my buddy!" - Seth Rogen
-            </div>
+            </p>
         </div>
-        <p>© 2024 RouteBite. Founded in 2024. All rights reserved. We love Canada.And America. Of Course.</p>
+        <p>© 2024 RouteBite. Founded in 2024. All rights reserved. We love Canada. And America.</p>
     </footer>
 </body>
 </html>
