@@ -140,16 +140,18 @@ footer {
     color: var(--text-color);
     text-align: center;
     padding: 20px 0;
-    height: 120px; /* Ensures the footer height matches the header */
     position: fixed;
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    height: 120px; /* Ensures the footer height matches the header */
 }
 
 .reviews-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -158,7 +160,7 @@ footer .review {
     color: gold; /* Changes the text color to gold, matching the stars */
     font-size: 1em; /* Adjusts size as needed */
     margin-bottom: 5px; /* Reduces spacing between the review and copyright text */
-    width: 22%; /* Makes sure reviews are equally spaced */
+    flex: 1 1 200px; /* Ensures reviews are flexible and responsive */
 }
 
 /* Star ratings */
@@ -173,8 +175,7 @@ footer .stars {
         padding-bottom: 20px; /* Reduces padding at the bottom on small screens */
         height: auto; /* Allows the height to adjust on small screens */
     }
-    footer .reviews-container {
+    .reviews-container {
         flex-direction: column; /* Stacks reviews vertically on small screens */
-        align-items: center; /* Centers the reviews on small screens */
     }
 }
