@@ -95,7 +95,7 @@ nav a:hover {
 }
 
 .route-options img {
-    max-width: 50px; /* Set the max width to 50px */
+    max-width: 30px; /* Set the max width to 30px */
     height: auto;
 }
 
@@ -140,26 +140,77 @@ footer {
     color: var(--text-color);
     text-align: center;
     padding: 20px 0;
+    height: 120px; /* Ensures the footer height matches the header */
     position: fixed;
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
-    height: 120px; /* Ensures the footer height matches the header */
 }
 
-.reviews-container {
+/* Responsive typography */
+h1, h2, h3, p {
+    margin: 20px 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+/* Layout adjustments for main content */
+.content-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.allergen-filter-panel {
+    width: 75%; /* Adjusts width to 75% of its container */
+    float: left; /* Ensures it aligns to the left */
+    padding: 20px;
+    box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.map-image-container {
+    width: 25%; /* Adjusts width to 25% of its container */
+    float: right; /* Ensures it aligns to the right */
+    padding: 20px;
+    box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+/* Ensure images fill their containers */
+.map-image-container img {
+    width: 100%;
+    height: auto; /* Keeps the aspect ratio intact */
+}
+
+/* Clearing floats for any following content */
+.content-container::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Review styling in footer */
+footer .reviews {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
 footer .review {
     color: gold; /* Changes the text color to gold, matching the stars */
     font-size: 1em; /* Adjusts size as needed */
-    margin-bottom: 5px; /* Reduces spacing between the review and copyright text */
+    margin: 0 10px; /* Adds spacing between the reviews */
     flex: 1 1 200px; /* Ensures reviews are flexible and responsive */
 }
 
